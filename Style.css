@@ -1,0 +1,224 @@
+*{
+    margin: 1;
+    padding: 2;
+    box-sizing: border-box;
+}
+/* body*/
+body{
+    font-family:"Arial",sans-serif; 
+    line-height: 1;
+    background: #eee;
+}
+/*header*/
+header{ /* C'est qui concerne le logo et le menu*/
+    background: linear-gradient(to right, lab(53.46% 83.75 -19.82), #e90ecf,#f72585);
+    color: white;
+    padding: 1rem,2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(226, 223, 223);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.menu-icon{
+font-size: 1.2rem;
+cursor:pointer;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background-image: url("IMAGE P1.png"); /* ton image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Filigrane */
+.hero::before {
+  content: ;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* ajuste la transparence */
+}
+
+/* Contenu au-dessus */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 500px;
+    padding: 80px 60px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 200px;
+    line-height: 1.6;
+}
+
+.btn {
+    padding: 12px 20px;
+    background: #ff2c55;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*features*/
+    .features {
+  background: #2c0f53; /* violet */
+  padding: 50px 20px;
+  text-align: center;
+}
+ 
+.features h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* grid*/
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* item*/
+.features-item {
+  background: transparent;
+  color: white;
+}
+
+/* icône */
+.features-item img {
+  width: 50px;          /* TAILLE DE L’ICÔNE */
+  height: 30px;
+  object-fit: contain;  /* évite la déformation */
+  margin-bottom: 5px;
+}
+
+/* TITRE */
+.features-item h4 {
+  margin-bottom: 10px;
+}
+
+/* TEXTE */
+.features-item p {
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+ /* --- Services Section --- */
+   .services {
+    padding: 60px 10%;
+}
+
+/* GRILLE */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+/* BLOC SERVICE */
+.services-item {
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ICÔNES */
+.services-item img {
+    width: 100px;
+    height: px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+/* TITRE */
+.services-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* EFFET HOVER */
+.services-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+
+    
+/* --- Advantages Section --- */
+    
+
+.advantages {
+    padding: 60px 10%;
+}
+
+/* GRILLE */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* ITEM */
+.advantages-item {
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ICÔNES */
+.advantages-item img {
+    width: 100px;  /*réduit l’image pour qu’elle ressemble à une icône.*/
+    height: 60px;
+    object-fit: contain;  /*garde les proportions sans déformer l’image.*/
+    background-color: #f3f3f3;
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* TITRE */
+.advantages-item h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* TEXTE */
+.advantages-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* HOVER */
+.advantages-item:hover {
+    transform: translateY(-5px);/*l’élément monte légèrement → effet interactif.*/
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);/*crée une ombre pour donner un effet de profondeur.*/
+}
